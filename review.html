@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Kelompok 5 - Review Power BI & Looker Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* CSS untuk menengahkan gambar di dalam section tutorial dan section lainnya */
+        .feature-image,
+        .dashboard-preview .dashboard-image,
+        .step-image {
+            text-align: center; /* Menengahkan konten di dalam div */
+            margin-top: 1rem;
+        }
+
+        .step-image img {
+            display: inline-block; /* Memastikan gambar bisa ditengahkan */
+            margin-bottom: 1rem;   /* Memberi jarak antar gambar jika ada lebih dari satu */
+            max-width: 100%;       /* Membuat gambar responsif */
+            height: auto;          /* Menjaga rasio aspek gambar */
+            border-radius: 8px;    /* Memberi sudut yang sedikit membulat pada gambar */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Menambah sedikit bayangan */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">📊 DataViz Blog</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="#">Home</a> &raquo; <a href="#">Tutorial</a> &raquo; <span>Looker Studio</span>
+        </div>
+    </div>
+
+    <main class="container main-content">
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>📘 Review Power BI & Looker Studio</h1>
+                <div class="post-meta">
+                    <span class="author">By Kelompok 5</span>
+                    <span class="date">Published on July 17, 2025</span>
+                    <span class="reading-time">5 min read</span>
+                </div>
+                <div class="tags">
+                    <span class="tag">Data Visualization</span>
+                    <span class="tag">Looker Studio</span>
+                    <span class="tag">Power BI</span>
+                </div>
+            </header>
+
+            <section class="team-section">
+                <h2>👥 Anggota Kelompok 5</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">AF</div>
+                        <div class="member-info">
+                            <h4>Aurel Feybilya Simamora</h4>
+                            <p>10122245</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">DA</div>
+                        <div class="member-info">
+                            <h4>Defania Adesti</h4>
+                            <p>10122342</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">DR</div>
+                        <div class="member-info">
+                            <h4>Dinda Rifka Tias Novansa</h4>
+                            <p>10122398</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">SN</div>
+                        <div class="member-info">
+                            <h4>Sabrina Najwa Aprilianti</h4>
+                            <p>11122325</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">MD</div>
+                        <div class="member-info">
+                            <h4>Muhammad Daffa Rajendra</h4>
+                            <p>10122867</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">RR</div>
+                        <div class="member-info">
+                            <h4>Rizky Ramdhani Koswara</h4>
+                            <p>11122300</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="class-info"><strong>Kelas:</strong> 3KA25</p>
+            </section>
+
+            <section class="content-section">
+                <h2>🧾 Tentang Looker Studio</h2>
+                <p>Looker Studio adalah alat gratis dari Google yang memungkinkan pengguna mengubah data menjadi
+                    dashboard dan laporan yang informatif, mudah dibaca, mudah dibagikan, dan dapat disesuaikan
+                    sepenuhnya (Google Cloud, 2025).</p>
+
+                <p>Looker Studio adalah platform visualisasi data berbasis web yang dikembangkan oleh Google, sebelumnya
+                    dikenal dengan nama Google Data Studio sebelum rebranding pada 2022. Alat ini dirancang untuk
+                    membantu pengguna menyajikan data dari berbagai sumber dalam bentuk laporan dan dashboard interaktif
+                    yang mudah dibaca, mudah diakses, serta bisa disesuaikan tampilannya sesuai kebutuhan.</p>
+
+                <div class="feature-image">
+                    <img src="https://strategicmarketsolutions.com/wp-content/uploads/2024/01/Looker-Studio-Logo.png"
+                        alt="Looker Studio Logo">
+                    <p class="image-caption">Looker Studio - Google's free data visualization tool</p>
+                </div>
+
+                <p>Salah satu keunggulan Looker Studio adalah kemampuannya mengintegrasikan data dari banyak platform
+                    populer seperti Google Analytics, Google Sheets, BigQuery, hingga database pihak ketiga melalui
+                    konektor. Dengan antarmuka berbasis drag-and-drop, pengguna yang tidak memiliki latar belakang
+                    teknis pun dapat membuat laporan yang profesional dan menarik secara visual.</p>
+            </section>
+
+            <section class="content-section">
+                <h2>🛠️ Tools yang Digunakan</h2>
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <i class="fab fa-google tool-icon"></i>
+                        <h3>Looker Studio</h3>
+                    </div>
+                    <ul class="tool-features">
+                        <li><strong>Deskripsi:</strong> Platform gratis dari Google untuk membuat laporan dan dashboard
+                            dari berbagai sumber data.</li>
+                        <li><strong>Pembuat:</strong> Google</li>
+                        <li><strong>Website:</strong> <a href="https://lookerstudio.google.com"
+                                target="_blank">https://lookerstudio.google.com</a></li>
+                        <li><strong>Harga:</strong> Gratis</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>📊 Output Visualisasi</h2>
+                <div class="dashboard-preview">
+                    <div class="dashboard-image">
+                        <img src="assets\outputvisualisasi.png"
+                            alt="Dashboard Preview">
+                    </div>
+                    <div class="dashboard-link">
+                        <a href="https://lookerstudio.google.com/s/tvKNARJAY1s" target="_blank" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Lihat Dashboard Lengkap
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section tutorial-section">
+                <h2>📝 Tutorial Membuat Diagram di Looker Studio</h2>
+                <div class="tutorial-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Persiapkan Data</h3>
+                        <p>Buka Google Sheets dan buat spreadsheet baru. Masukkan data yang ingin Anda visualisasikan
+                            dengan format kolom yang jelas (header di baris pertama). Pastikan data sudah bersih dan
+                            konsisten.</p>
+                        <div class="step-image">
+                            <img src="assets\persiapkandata1.png"
+                                alt="Google Sheets Data">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Buka Looker Studio</h3>
+                        <p>Kunjungi <a href="https://lookerstudio.google.com"
+                                target="_blank">lookerstudio.google.com</a> dan login dengan akun Google Anda. Klik
+                            "Blank Report" untuk memulai proyek baru.</p>
+                        <div class="step-image">
+                            <img src="assets\blankreport.png"
+                                alt="Looker Studio Homepage">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Hubungkan Data</h3>
+                        <p>Di panel kiri, klik "Create New Data Source". Pilih "Google Sheets" dan cari spreadsheet yang
+                            sudah Anda buat. Pilih lembar kerja yang berisi data dan klik "Connect".</p>
+                        <div class="step-image">
+                            <img src="assets\hubungkandata1.png"
+                                alt="Connect Google Sheets">
+                        </div>
+                         <div class="step-image">
+                            <img src="assets\hubungkandata2.png"
+                                alt="Select Data Range">
+                        </div>
+                         <div class="step-image">
+                            <img src="assets\hubungkandata3.png"
+                                alt="Data Source Connected">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Buat Diagram Batang</h3>
+                        <p>Di menu atas, klik "Add a chart" dan pilih "Bar chart". Tarik area di laporan untuk
+                            menempatkan diagram. Di panel kanan, pilih dimensi (sumbu X) dan metrik (sumbu Y) dari data
+                            Anda.</p>
+                        <div class="step-image">
+                            <img src="assets\barchart1.png" alt="Create Bar Chart">
+                        </div>
+                        <div class="step-image">
+                            <img src="assets\barchart2.png" alt="Bar Chart Configuration">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Buat Diagram Pie</h3>
+                        <p>Klik "Add a chart" dan pilih "Pie chart". Tarik area untuk diagram pie. Pilih dimensi untuk
+                            kategori dan metrik untuk nilai. Anda bisa menyesuaikan warna dan label di panel Style.</p>
+                        <div class="step-image">
+                            <img src="assets\pie chart1.png" alt="Create Pie Chart">
+                        </div>
+                        <div class="step-image">
+                            <img src="assets\pie chart2.png" alt="Pie Chart Configuration">
+                        </div>
+                    </div>
+                </div>
+  
+
+                <div class="tutorial-step">
+                    <div class="step-number">8</div>
+                    <div class="step-content">
+                        <h3>Publikasikan Dashboard</h3>
+                        <p>Setelah selesai, klik "Share" di kanan atas. Anda bisa mengatur izin atau mendapatkan link
+                            yang bisa dibagikan. </p>
+                        <div class="step-image">
+                            <img src="assets\share1.png"
+                                alt="Publish Dashboard">
+                        </div>
+                        <div class="step-image">
+                            <img src="assets\share2.png"
+                                alt="Share Settings">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>✅ Yang Disukai & Tidak Disukai</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tools</th>
+                                <th>Kelebihan</th>
+                                <th>Kekurangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Power BI</strong></td>
+                                <td>
+                                    <ul>
+                                        <li><b>ETL Kuat:</b> Power Query untuk transformasi data yang canggih.</li>
+                                        <li><b>Analisis Mendalam:</b> Didukung bahasa DAX untuk kalkulasi kompleks.</li>
+                                        <li><b>Integrasi Microsoft:</b> Terhubung baik dengan Excel, Azure, dll.</li>
+                                        <li><b>Visualisasi Kaya:</b> Pilihan visualisasi bawaan & kustom yang banyak.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><b>Butuh Spek Tinggi:</b> Aplikasi desktop memakan banyak memori (RAM).</li>
+                                        <li><b>Kurva Belajar Curam:</b> Butuh waktu untuk menguasai DAX & Power Query.</li>
+                                        <li><b>Kolaborasi Berbayar:</b> Fitur berbagi memerlukan lisensi Pro/Premium.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Looker Studio</strong></td>
+                                <td>
+                                    <ul>
+                                        <li><b>Gratis:</b> Seluruh fitur utamanya dapat digunakan secara gratis.</li>
+                                        <li><b>Mudah Digunakan:</b> Antarmuka intuitif dan ramah untuk pemula.</li>
+                                        <li><b>Berbasis Web:</b> Tidak perlu instalasi, bisa diakses dari mana saja.</li>
+                                        <li><b>Kolaborasi Real-time:</b> Mudah untuk berbagi dan kerja tim.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li><b>Analisis Terbatas:</b> Tidak ada fitur ETL dan pemodelan data secanggih Power BI.</li>
+                                        <li><b>Tergantung Sumber Data:</b> Performa lambat jika sumber data tidak optimal.</li>
+                                        <li><b>Harus Online:</b> Tidak bisa digunakan secara offline.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>⚖️ Perbandingan Power BI vs Looker Studio</h2>
+                <div class="feature-comparison">
+                    <div class="comparison-card">
+                        <div class="comparison-header">
+                            <h3>Power BI</h3>
+                            <div class="tool-logo">
+                                <i class="fab fa-microsoft"></i>
+                            </div>
+                        </div>
+                        <ul class="feature-list">
+                            <li class="pro"><i class="fas fa-check-circle"></i> Visualisasi Lengkap & Interaktif</li>
+                            <li class="pro"><i class="fas fa-check-circle"></i> Ada Power Query untuk ETL</li>
+                            <li class="con"><i class="fas fa-times-circle"></i> Gratis (Desktop), Berbayar (Online)</li>
+                            <li class="con"><i class="fas fa-times-circle"></i> Kolaborasi hanya di Versi Pro</li>
+                            <li class="neutral"><i class="fas fa-info-circle"></i> Cocok untuk Perusahaan & analis</li>
+                        </ul>
+                    </div>
+                    <div class="comparison-card">
+                        <div class="comparison-header">
+                            <h3>Looker Studio</h3>
+                            <div class="tool-logo">
+                                <i class="fab fa-google"></i>
+                            </div>
+                        </div>
+                        <ul class="feature-list">
+                            <li class="pro"><i class="fas fa-check-circle"></i> Visualisasi Sederhana & Mudah</li>
+                            <li class="con"><i class="fas fa-times-circle"></i> Tidak ada fitur ETL</li>
+                            <li class="pro"><i class="fas fa-check-circle"></i> Sepenuhnya Gratis</li>
+                            <li class="pro"><i class="fas fa-check-circle"></i> Kolaborasi dengan share link</li>
+                            <li class="neutral"><i class="fas fa-info-circle"></i> Cocok untuk Mahasiswa, UMKM</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>🎯 Kesimpulan</h2>
+                <div class="highlight-box">
+                    <p>Kombinasi Power BI dan Looker Studio sangat efektif untuk mengolah dan menyajikan data film dan
+                        serial populer. Power BI unggul dalam pembersihan dan pengolahan data, sementara Looker Studio
+                        memudahkan visualisasi interaktif secara online. Cocok untuk tugas, proyek mahasiswa, hingga
+                        presentasi publik.</p>
+                </div>
+            </section>
+
+            <footer class="post-footer">
+                <div class="social-sharing">
+                    <span>Bagikan:</span>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="post-actions">
+                    <button class="btn-like"><i class="far fa-thumbs-up"></i> Suka</button>
+                    <button class="btn-comment"><i class="far fa-comment"></i> Komentar</button>
+                    <button class="btn-bookmark"><i class="far fa-bookmark"></i> Simpan</button>
+                </div>
+            </footer>
+        </article>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Tentang Penulis</h3>
+                <div class="author-bio">
+                    <div class="author-avatar">K5</div>
+                    <div class="author-info">
+                        <h4>Kelompok 5</h4>
+                        <p>Mahasiswa Universitas Gunadarma angkatan 2022 dari kelas 3KA25 yang tertarik dengan data
+                            visualization dan business intelligence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Tool Populer</h3>
+                <ul class="tool-list">
+                    <li><a href="#"><i class="fab fa-microsoft"></i> Power BI</a></li>
+                    <li><a href="#"><i class="fab fa-google"></i> Looker Studio</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Tableau</a></li>
+                    <li><a href="#"><i class="fab fa-python"></i> Python (Matplotlib)</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Tutorial Terkait</h3>
+                <div class="related-tutorial">
+                    <a href="#">
+                        <h4>Membuat Dashboard Interaktif dengan Power BI</h4>
+                        <p>Panduan lengkap untuk pemula</p>
+                    </a>
+                </div>
+                <div class="related-tutorial">
+                    <a href="#">
+                        <h4>Visualisasi Data dengan Python</h4>
+                        <p>Menggunakan Matplotlib dan Seaborn</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>DataViz Blog</h3>
+                    <p>Blog tentang data visualization, business intelligence, dan tools terkait untuk mahasiswa dan
+                        profesional.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> dataviz@blog.com</li>
+                        <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Tautan Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tutorial</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DataViz Blog. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
