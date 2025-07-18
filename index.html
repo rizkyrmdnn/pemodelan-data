@@ -24,6 +24,17 @@
             border-radius: 8px;    /* Memberi sudut yang sedikit membulat pada gambar */
             box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Menambah sedikit bayangan */
         }
+        
+        /* Style untuk list di dalam kesimpulan */
+        .highlight-box ul {
+            list-style-position: inside;
+            padding-left: 0;
+            margin-top: 1rem;
+        }
+
+        .highlight-box li {
+            margin-bottom: 0.75rem;
+        }
     </style>
 </head>
 
@@ -362,27 +373,16 @@
             <section class="content-section">
                 <h2>🎯 Kesimpulan</h2>
                 <div class="highlight-box">
-                    <p>Kombinasi Power BI dan Looker Studio sangat efektif untuk mengolah dan menyajikan data film dan
-                        serial populer. Power BI unggul dalam pembersihan dan pengolahan data, sementara Looker Studio
-                        memudahkan visualisasi interaktif secara online. Cocok untuk tugas, proyek mahasiswa, hingga
-                        presentasi publik.</p>
+                    <p>Looker Studio cocok untuk pengguna pemula karena mudah digunakan, gratis, dan mendukung kolaborasi real-time. Sementara Power BI lebih kuat untuk analisis mendalam dan transformasi data, tapi butuh spesifikasi tinggi dan belajar lebih dalam.</p>
+                    <p>Pemilihan tools tergantung kebutuhan:</p>
+                    <ul>
+                        <li><strong>Looker Studio</strong> untuk laporan cepat & ringan.</li>
+                        <li><strong>Power BI</strong> untuk analisis kompleks & profesional.</li>
+                    </ul>
                 </div>
             </section>
 
-            <footer class="post-footer">
-                <div class="social-sharing">
-                    <span>Bagikan:</span>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                </div>
-                <div class="post-actions">
-                    <button class="btn-like"><i class="far fa-thumbs-up"></i> Suka</button>
-                    <button class="btn-comment"><i class="far fa-comment"></i> Komentar</button>
-                    <button class="btn-bookmark"><i class="far fa-bookmark"></i> Simpan</button>
-                </div>
-            </footer>
+           
         </article>
 
         <aside class="sidebar">
@@ -402,7 +402,7 @@
                 <h3 class="widget-title">Tool Populer</h3>
                 <ul class="tool-list">
                     <li><a href="#"><i class="fab fa-microsoft"></i> Power BI</a></li>
-                    <li><a href="#"><i class="fab fa-google"></i> Looker Studio</a></li>
+                    <li><a href="https://lookerstudio.google.com"><i class="fab fa-google"></i> Looker Studio</a></li>
                     <li><a href="#"><i class="fas fa-chart-line"></i> Tableau</a></li>
                     <li><a href="#"><i class="fab fa-python"></i> Python (Matplotlib)</a></li>
                 </ul>
@@ -426,42 +426,7 @@
         </aside>
     </main>
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>DataViz Blog</h3>
-                    <p>Blog tentang data visualization, business intelligence, dan tools terkait untuk mahasiswa dan
-                        profesional.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Kontak</h3>
-                    <ul class="footer-links">
-                        <li><i class="fas fa-envelope"></i> dataviz@blog.com</li>
-                        <li><i class="fas fa-phone"></i> +62 123 4567 890</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Tautan Cepat</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Tutorial</a></li>
-                        <li><a href="#">Tools</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 DataViz Blog. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+
 </body>
 
 </html>
